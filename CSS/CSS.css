@@ -1,0 +1,280 @@
+header {
+	background-color: #23A1C0;
+}
+
+body {
+	margin: 0;
+	font-family: "Arial",sans-serif;
+	background-color: #23A1C0;
+	height: 100%;
+}
+
+
+.logo {
+	float: left;
+	padding: 10px 0;
+}
+
+nav.topnav .container {
+	float: right;
+}
+
+nav.top-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav.top-nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 40px;
+	position: relative;
+	float: right;
+
+}
+
+nav.top-nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+nav.top-nav a:hover {
+	color: #000
+}
+
+nav.top-nav a::before {
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0%;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+	transition: all ease-in-out 250ms;
+}
+
+nav.top-nav a:hover::before {
+	width: 100%;
+}
+
+img.heximage {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 500px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+span.span {
+	background-color:grey;
+	color: orange;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: #ff9c1c;}
+
+h1, h2, h3, h4 {
+	color: #444;
+	text-decoration: none;
+	padding-top: 50px;
+} 
+
+p {
+	color: #ffffff;
+	font-size: 20px;
+	font-family: "Arial", sans-serif;
+	font-weight: lighter;
+	padding-top: 20px;
+}
+
+p.colorcss {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 255px;
+}
+
+p.cexplained {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 127.5px;
+}
+
+p.cexplainedhtml {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 445px;
+}
+
+p.paddingcode {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 380px;
+}
+
+p.paddingcoderesult {
+	border: 2px solid orange;
+	background-color: grey;
+	padding: 25px 50px 100px 75px;
+}
+
+p.bexplained {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 340px;
+}
+
+p.threeval {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 245px;
+}
+
+p.twoval {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 195px;
+}
+
+p.oneval {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 145px;
+}
+
+p.solid {
+	border-style: solid;
+	width: 70px;
+}
+p.dotted {
+	border-style: dotted;
+	width: 97.5px;
+}
+p.dashed {
+	border-style: dashed;
+	width: 97.5px;
+}
+p.double {
+	border-style: double;
+	width: 97.5px;
+}
+
+p.fontexplained {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 500px;
+}
+
+p.fontexample {
+	font-family: "Times New Roman", Times, serif;
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 275px;
+}
+
+.photos {
+	float: left;
+	width: 24%;
+	padding: 5px;
+	padding-top: 40px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.beforecss img {
+	padding-top: 40px;		
+}
+
+.aftercss img {
+	padding-top: 40px;		
+}
+
+.content {
+	margin-left: 265px;
+	padding-top: 60px;
+	padding-right: 30px;
+}
+
+hr.style1 {
+	border-top: 3px double #000;
+}
+
+.footer {
+	font-size: 16px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+* {padding:0; margin:0;}
+a {text-decoration: none;}
+li {list-style: none;}
+/* Navigation STyling */
+.main-nav {
+	width: 250px; 
+	background: #ff9c1c; 
+	position: fixed;
+	top: 300px;
+	margin-left: 0px;
+}
+
+.main-nav a {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #FFF;
+	display: block;
+	padding: 10px 0 10px 20px;
+}
+.main-nav a:hover {background: #C04223;}
+.main-nav-ul ul {display: none;}
+.main-nav-ul li:hover ul {display: block;}
+.main-nav-ul ul a:before {
+	content: '\203A';
+	margin-right: 20px;
+}
+.main-nav .sub-arrow:after {
+	content: '\203A';
+	float: right;
+	margin-right: 20px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+.main-nav li:hover .sub-arrow:after {
+	content: '\2039';
+}

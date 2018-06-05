@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../CSS/HTML.css" 
+			  media="screen and (min-width: 481px)"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../Javascript/index.js"></script>
+		<title>HTML and CSS For You</title>
+	</head>
+	<body>
+
+
+		<header>
+			<!--Menu Bar-->
+			<div class="container">
+				<nav class="top-nav">
+					<ul>
+						<li><a href="../HTML/Organisation.html">Organisation</a></li>
+						<li><a href="../HTML/CSS.html">CSS</a></li>
+						<li><a href="../HTML/HTML.html">HTML</a></li>
+						<li><a href="../HTML/index.html">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--Side Bar-->
+		<nav class="main-nav">
+			<ul class="main-nav-ul">
+				<li><a href="#images">Images</a></li>
+				<li><a href="#xhtml">XHTML Validation</a></li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#htmltags">HTML Tags<span class="sub-arrow"></span></a>
+					<ul>
+						<li><a href="#html">&lt;HTML&gt;</a></li>
+						<li><a href="#head">&lt;Head&gt;</a></li>
+						<li><a href="#body">&lt;Body&gt;</a></li>
+						<li><a href="#div">&lt;Div&gt;</a></li>
+						<li><a href="#span">&lt;Span&gt;</a></li>
+						<li><a href="#para">&lt;p&gt;</a></li>
+						<li><a href="#header">&lt;header&gt;</a></li>
+					</ul>
+				</li>
+				<li><a href="#links">Page Links</a></li>
+				<li><a href="#over">Overview</a></li>
+			</ul>
+		</nav>
+		<!--All of the main content-->
+		<div class="content">
+			<h1 id="images">Images</h1>
+
+			<p>
+				HTML represents images through the <span class="span">&lt;img&gt;</span> tag. To insert
+				an image, you must have an image link or the location of the image within your computer. 
+			</p>
+
+			<p>
+				Once you have this information, the code must be implemented to display an image on your webpage.
+			</p>
+
+			<p>
+				This code is shown below:
+			</p><br>
+
+			<p class="imgcode">
+				&lt;img src="name.jpg" alt="alternatetext"&gt;
+			</p>
+
+			<p>
+				Below, is the same code, though with extra information needed, including the folder name. Without this code, it will not work.
+			</p><br>
+
+			<p class="edimgcode">
+				&lt;img src="../foldername/name.jpg" alt="alternatetext"&gt;
+			</p>
+
+			<p>
+
+			<h1 id="xhtml"> XHTML Strict Validation</h1>
+
+			<p>
+				To ensure that there are no errors in your HTML document, a website like the one below, can display all the errors and mistakes you have made.  
+			</p><br>
+
+			<a href="https://validator.w3.org/" title="W3 XHTML 1.0 Validator"><img src="../photos/W3.png" alt="Photo of W3 Validator" class="W3image"></a>
+
+			<h1 id="tables">Tables</h1>
+			<p>
+
+				The tag <span class="span">th</span> stands for table heading. As the name suggests, it is the heading of the table, meaning that anything you put in a <span class="span"> th</span> tag, will act as a heading.
+			</p>
+			<p>
+				Another aspect in a table is <span class="span">tr</span>, this stands for table row, and whatever is inputed in this will act as a row of a table.
+			</p>
+			<p>
+				The final portion of a table is table data, or (<span class="span">td</span>). Table data is a singular table cell, including standard cells and header cells.
+			</p><br>
+			<!--First table-->
+			<table class="tableteaching">
+				<tr class="tableteaching">
+					<th class="tableteaching">Table Header (th)</th> 
+					<th class="tableteaching">Table Header (th)</th>
+				</tr> 
+				<tr> 
+					<td class="tableteaching">Table Data (td)</td> 
+					<td class="tableteaching">Table Data (td)</td>
+				</tr>
+				<tr>
+					<td class="tableteaching">Table Data (td)</td>
+					<td class="tableteaching">Table Data (td)</td>
+				</tr>
+			</table>
+
+			<p>
+
+			<h1 id="htmltags">Common HTML tags</h1>
+
+			<p>
+				There are a multitude of HTML tags that allow coders to make their own website, these tags can be vital to make a proffesionial and well-constructed webpage, a few of these tags will be taught.
+			</p>
+
+			<h2 id="html">
+				&lt;html&gt; 
+			</h2><br>
+
+			<p>
+				The HTML tag indicates that it is a HTML document.
+			</p>
+
+			<h2 id="head">
+				&lt;head&gt; 
+			</h2>
+			<br>
+			<p>
+				The head tag acts like a container for all the head elements. The head elements consist of  a title for the document, scripts, styles, meta information, and more.
+			</p>
+
+
+			<h2 id="body">
+				&lt;body&gt; 
+			</h2>
+			<p>
+				The <span class="span">&lt;body&gt;</span> tag defines the document's body. The body element contains all the content of an HTML document, such as text, images, tables, lists, etc.
+			</p><br>
+
+			<h2 id="div">
+				&lt;div&gt;
+			</h2>
+
+			<p>
+				The division tag (<span class="span">&lt;div&gt;</span>), is a section in the HTML document, and is often purposed for CSS or another coding language.
+			</p>
+
+			<h2 id="span">
+				&lt;span&gt;
+			</h2>
+
+			<p>
+				This tag allows for styling within a tag, such as <span class="span">&lt;p&gt;</span> or <span class="span">&lt;h1&gt;</span>.
+			</p><br>
+
+			<p>
+				This is shown in the following example:
+			</p><br>
+
+			<p class="spanexplained">
+				&lt;element&gt; This writing is now &lt;span style="color:orange;"&gt; orange&lt;/span&gt;&lt;/element&gt;
+			</p>
+
+			<p>
+				The above structure will be used to show a result from this code:
+			</p><br>
+
+			<p class="spanresult">
+				This writing is now<span style="color:orange;"> orange</span>
+			</p>
+
+			<h2 id="para">
+				&lt;p&gt; 
+			</h2>
+			<p>
+				Paragraphs go into the body of the HTML and can contain <span class="span">&lt;images&gt;</span>, videos and other common HTML tags. It also allows for coders to write paragraphs, like the one you're reading right now!
+			</p>
+
+			<h2 id="header">
+				&lt;header&gt; 
+			</h2>
+			<br>
+			<p>
+				Headers, which are found in the body, are represented in the form of h1, h2, h3 ... h6. The larger the number in front of <span class="span">'h'</span>, the smaller the text gets in size. This can give a structure to your webpage, and make it easier to follow your website.
+			</p>
+
+			<h1 id="links">
+				Page Links
+			</h1>
+
+			<p>
+				When creating more advanced websites with greater content, that require structure, coming from new links and pages, you must be able to link between multiple pages.
+			</p>
+
+			<p>
+				To achieve links between HTML pages and CSS pages, you must follow the following line of code:
+			</p><br>
+
+			<p class="lexplained1">
+				&lt;link type="text/css" rel="stylesheet" href="../folder/file.css" 
+				media="screen and (min-width: 481px)"/&gt;
+			</p><br>
+			<!--Second table-->
+			<table class="lexplained1table">
+				<tr class="lexplained1table">
+					<td class="lexplained1table"></td>
+					<th scope="col" class="lexplained1table">Purpose</th>
+				</tr>
+				<tr class="lexplained1table">
+					<th scope="row" class="lexplained1table">link type="text/css"</th>
+					<td class="lexplained1table">Dictates the file type (e.g. css)</td>
+				</tr>
+				<tr class="lexplained1table">
+					<th scope="row" class="lexplained1table">rel="stylesheet"</th>
+					<td class="lexplained1table">Indicates the use of CSS for the HTML file</td>
+				</tr>
+				<tr class="lexplained1table">
+					<th scope="row" class="lexplained1table">href="../folder/file.css"</th>
+					<td class="lexplained1table">Shows the folder that the file is found, and is ordered this way</td>
+				</tr>
+				<tr class="lexplained1table">
+					<th scope="row" class="lexplained1table">media="screen and (min-width: 481px)"</th>
+					<td class="lexplained1table">Dictates the size of the screen display</td>
+				</tr> 
+			</table>
+
+
+			<p>
+				The following code will allow users to navigate to another html page at the click of a mouse:
+			</p><br>
+
+			<p class="lexplained2">
+				&lt;a href="pagebeinglinked.html"&gt;The Link&lt;/a&gt;
+			</p>	
+
+			<h1 id="over">
+				Overview
+			</h1>
+
+			<p>
+				In the above page, teaching you about HTML, the topics of images, validation, tables, tags and linking pages. All of these aspects of basic HTML will get you started on your first website!
+			</p><br>
+		</div>
+		<!--Footer-->
+		<hr/>
+		<p class="footer">
+			Copyright &copy; 2018. HTML and CSS For You Pty Ltd.
+		</p>
+	</body>
+</html>

@@ -1,0 +1,219 @@
+header {
+	background-color: #23A1C0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	background-color: #23A1C0;
+	height: 100%;
+}
+
+.logo {
+	float: left;
+	padding: 10px 0;
+}
+
+nav.topnav .container{
+	float: right;
+}
+
+nav.top-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav.top-nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 40px;
+	position: relative;
+	float: right;
+
+}
+
+nav.top-nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+nav.top-nav a:hover {
+	color: #000
+}
+
+nav.top-nav a::before{
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0%;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+	transition: all ease-in-out 250ms;
+}
+
+nav.top-nav a:hover::before{
+	width: 100%;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+th.tableteaching, td.tableteaching {
+	border: 1px solid black;
+}
+
+table.tableteaching {
+	border: 1px solid black;
+}
+
+img.W3image {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 500px;
+}
+
+.footer {
+	font-size: 16px;
+}
+
+span.span {
+	background-color:grey;
+	color: orange;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #444;
+	text-decoration: none;
+	padding-top: 50px;
+}
+
+table.lexplained1table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th.lexplained1table {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+td.lexplained1table {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+tr.lexplained1table:hover {background-color: #ff9c1c;}
+
+p.edimgcode {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 486px;
+}
+
+p.imgcode {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 360px;
+}
+
+p.spanexplained {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 770px;
+}
+
+p.spanresult {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 237px;
+}
+
+p.lexplained1 {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 897.5px;
+}
+
+p.lexplained2 {
+	background-color: grey;
+	border-left: 4px solid orange;
+	padding: 4px;
+	width: 410px;
+}
+
+p {
+	color: #ffffff;
+	font-size: 20px;
+	padding-top: 20px;
+	font-family: "Arial",sans-serif;
+	font-weight: lighter;
+}
+
+.content{
+	margin-left: 265px;
+	padding-top: 60px;
+	padding-right: 30px;
+}
+
+* {padding:0; margin:0;}
+a {text-decoration: none;}
+li {list-style: none;}
+/* Navigation Styling */
+.main-nav {
+	width: 250px; 
+	background: #ff9c1c; 
+	position: fixed;
+	top: 300px;
+	margin-left: 0px;
+}
+.main-nav a {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #FFF;
+	display: block;
+	padding: 10px 0 10px 20px;
+}
+.main-nav a:hover {background: #C04223;}
+.main-nav-ul ul {display: none;}
+.main-nav-ul li:hover ul {display: block;}
+.main-nav-ul ul a:before {
+	content: '\203A';
+	margin-right: 20px;
+}
+.main-nav .sub-arrow:after {
+	content: '\203A';
+	float: right;
+	margin-right: 20px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+.main-nav li:hover .sub-arrow:after {
+	content: '\2039';
+}
+
+
+
+
+
+

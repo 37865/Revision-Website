@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="../CSS/CSS.css" 
+			  media="screen and (min-width: 481px)"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../Javascript/index.js"></script>
+		<title>HTML and CSS For You</title>
+	</head>
+	<body>
+		<header>
+			<!--Menu Bar-->
+			<div class="container">
+				<nav class="top-nav">
+					<ul>
+						<li><a href="../HTML/Organisation.html">Organisation</a></li>
+						<li><a href="../HTML/CSS.html">CSS</a></li>
+						<li><a href="../HTML/HTML.html">HTML</a></li>
+						<li><a href="../HTML/index.html">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--Side Bar-->
+		<nav class="main-nav">
+			<ul class="main-nav-ul">
+
+				<li><a href="#using">Using CSS<span class="sub-arrow"></span></a>
+					<ul>
+						<li><a href="#inline">In-line</a></li>
+						<li><a href="#internal">Internal</a></li>
+						<li><a href="#external">External</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CSS Tags<span class="sub-arrow"></span></a>
+					<ul>
+						<li><a href="#colours">Colours</a></li>
+						<li><a href="#borders">Borders</a></li>
+						<li><a href="#fonts">Fonts</a></li>
+						<li><a href="#padding">Padding</a></li>
+					</ul>
+				</li>
+				<li><a href="#classing">Classing</a></li>
+				<li><a href="#over">Overview</a></li>
+			</ul>
+		</nav>
+		<!--All of the main content-->
+		<div class="content">
+			<h1 id="using">
+				Using CSS
+			</h1>
+
+			<p>
+				There are three main ways to implement CSS in your HTML file, these are in-line, internal and external.  
+			</p>
+			<!--Using CSS Table-->
+			<table>
+				<tr>
+					<td></td>
+					<th scope="col">Pros</th>
+					<th scope="col">Cons</th>
+				</tr>
+				<tr>
+					<th scope="row">In-line</th>
+					<td>Good for easily running changes to code</td>
+					<td>CSS must be implemented into every element</td>
+				</tr>
+				<tr>
+					<th scope="row">Internal</th>
+					<td>There is no need to load multiple files</td>
+					<td>Increases page loading time</td>
+				</tr>
+				<tr>
+					<th scope="row">External</th>
+					<td>Page may not be rendered correctly until CSS is loaded</td>
+					<td>Cleaner structure to code</td>
+				</tr>
+			</table>
+
+			<h1 id="inline">
+				In-Line
+			</h1>
+
+			<p>
+				In-line CSS utilises the <span class="span">&lt;style&gt;</span> tag within the HTML file.
+			</p>
+
+			<h1 id="internal">
+				Internal
+			</h1>
+
+			<p>
+				Internal CSS uses a similar format to external CSS, but is implemented within the HTML file, and is only functional when <span class="span">../HTML/CSS.html&lt;style type="text/css"&gt;</span> is written into the code.
+			</p>
+
+			<h1 id="external">
+				External
+			</h1>
+
+			<p>
+				External CSS is the most popular amongst coders, as it is as proffessional and efficient way to utilise code.
+			</p>
+
+			<h1 id="colours">
+				Colours
+			</h1>
+
+			<p>
+				CSS can allow coders to add colour to a webpage, and can be done to various portions of a page, including <span class="span">&lt;p&gt;</span>, <span class="span">&lt;h1&gt;</span> and <span class="span">&lt;body&gt;</span>.
+			</p>
+
+			<p>
+				The very simple CSS to achieve colour is shown here:
+			</p><br>
+
+			<p class="colorcss">
+				element {color: your choice;}
+			</p>
+
+			<p>
+				Notice how the CSS code will not function unless 'color' is in American spelling.
+			</p>
+
+			<p>
+				There are three main methods of acquiring a color on CSS, including the name (e.g. red), a hex color code, or an RGB value.
+			</p>
+
+			<h2>
+				Hex Code
+			</h2>
+
+			<p>
+				A popular way of getting specific and unique colours, Hex color codes can be found in various websites, such as the one below:
+			</p><br>
+
+			<a href="https://htmlcolorcodes.com/" title="Hex Colour Picker"><img src="../photos/heximage.png" alt="Photo of a hex colour picker" class="heximage"></a>
+
+			<p>
+				These colour codes, are a combination of letters and numbers, with a <span class="span">'#'</span> to start the code.
+			</p>
+
+			<h2>
+				RGB Value
+			</h2>
+
+			<p>
+				RGB values are decided through <span class="span">(red, blue, green)</span>, where each colour has a level of intensity, with the maximum being <span class="span">225</span>.
+			</p>
+
+			<p>
+				For example, red in it's RGB value would be <span class="span">(225, 0, 0)</span>.
+			</p>
+
+			<h1 id="borders">
+				Borders
+			</h1>
+
+			<p>
+				In CSS, there are multiple forms of borders including solid, dotted, dashed and double. 
+			</p>
+
+			<p>
+				Borders are represented in CSS in the following way: 
+			</p><br>
+
+			<p class="bexplained">
+				chosen element {border-style: dotted;}
+			</p><br>
+
+			<p class="solid">
+				SOLID
+			</p><br>
+
+			<p class="dotted">
+				DOTTED
+			</p><br>
+
+			<p class="dashed">
+				DASHED
+			</p><br>
+
+			<p class="double">
+				DOUBLE
+			</p><br>
+
+			<h1 id="fonts">  
+				Fonts
+			</h1>
+
+			<p>
+				In CSS, fonts can be altered through the<span class="span"> 'Font Family'</span> property. This is when there are many fonts, which are presented as the <span class="span">Fallback System</span>. For example, if the browser that you are working on does not support the first font, it tries successive fonts, until it is compatible to your browser. 
+			</p><br>
+
+			<p class="fontexplained">
+				element {font-family: "Times New Roman", Times, serif;}
+			</p>
+
+			<p>
+				The above code would result in the following:
+			</p><br>
+
+			<p class="fontexample">
+				This is a 'Times New Roman' font
+			</p>
+
+			<h1 id="padding">
+				Padding
+			</h1>
+
+			<p>
+				The CSS padding property allows for spacing around an elements content, within any defined border in the webpage. 
+			</p>
+
+			<p>
+				There are four forms of padding, accounting for each side of a given element.
+			</p>
+
+			<table>
+				<tr>
+					<td></td>
+					<th scope="col">Purpose</th>
+				</tr>
+				<tr>
+					<th scope="row">padding</th>
+					<td>Creates space for all four sides</td>
+				</tr>
+				<tr>
+					<th scope="row">padding-top</th>
+					<td>Creates space for the top side</td>
+				</tr>
+				<tr>
+					<th scope="row">padding-right</th>
+					<td>Creates space for the right side</td>
+				</tr>
+				<tr>
+					<th scope="row">padding-bottom</th>
+					<td>Creates space for the bottom side</td>
+				</tr>
+				<tr>
+					<th scope="row">padding-left</th>
+					<td>Creates space for the left side</td>
+				</tr> 
+			</table>
+
+			<p>
+				Mainly represented in the values of <span class="span">'%'</span> and <span class="span">'px'</span>.
+			</p>
+
+			<p>
+				The value <span class="span">'px'</span> shows the amount of pixels that is padded, <span class="span">'%'</span> shows the percentage of the width holding the element.
+			</p>
+
+			<p>
+				Padding written in CSS, can dictate all four sides in one line of code, done in the following way:
+			</p><br>
+
+			<p class="paddingcode">
+				element {padding: 25px 50px 100px 75px;}
+			</p>
+
+			<p>
+				Paired with a border (to show the padding effect), the following is the result of the above code:
+			</p><br>
+
+			<p class="paddingcoderesult">
+				An element with a top padding of 25px, a right padding of 50px, a bottom padding of 100px, and a left padding of 75px.
+			</p>
+
+			<h3>
+				When padding has three values:
+			</h3><br>
+
+			<p class="threeval">
+				{padding: 10px 20px 30px;}
+			</p>
+
+			<p>
+				Top padding is 10px, right and left paddings are 20px, bottom padding is 30px.
+			</p>
+
+			<h3>
+				When padding has two values:
+			</h3><br>
+
+			<p class="twoval">
+				{padding: 10px 20px;}	
+			</p>
+
+			<p>
+				Top and bottom paddings is <span class="span">10px</span>, right and left paddings is <span class="span">20px</span>.
+			</p>
+
+			<h3>
+				When padding has one value:
+			</h3><br>
+
+			<p class="oneval">
+				{padding: 10px;}
+			</p>
+
+			<p>
+				All four paddings are <span class="span">10px</span>. 
+			</p>
+
+			<h1 id="classing">
+				Classing
+			</h1>
+
+			<p>
+				In CSS and HTML, classing elements is a vital skill for coders to have, and allows only specified elements to be affected by CSS in a class.
+			</p>
+
+			<p>
+				When writing a class in CSS, you must write <span class="span">'.'</span> before the class name, for the code to function.
+			</p>
+
+			<p>
+				An example is this:
+			</p><br>
+
+			<p class="cexplained">
+				.classname { }
+			</p>
+
+			<p>
+				The class function will not work until the HTML side is completed. This code looks like:
+			</p><br>
+
+			<p class="cexplainedhtml">
+				&lt;element class="classname"&gt;contents&lt;/element&gt;
+			</p>
+
+			<h1 id="over">
+				Overview
+			</h1>
+
+			<p>
+				In the CSS page you have learnt from above, the main topics that have been learnt are the main ways to implement CSS, common CSS tags to kickstart your website styling knowledge and classing elements.
+			</p><br>
+		</div>
+		<!--Footer-->
+		<hr/>
+		<p class="footer">
+			Copyright &copy; 2018. HTML and CSS For You Pty Ltd.
+		</p>
+	</body>
+</html>
